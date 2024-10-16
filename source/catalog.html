@@ -12,8 +12,8 @@
 <body class="page__body">
   <header class="header">
     <div class="wrapper">
-      <a class="navigation__logo" href="catalog.html" aria-current="page">
-        <img class="navigat__logo-pic" src="#" width="" height="" alt="Логотип сайта cat energy">
+      <a class="logo" href="catalog.html" aria-current="page">
+        <img class="logo__pic" src="#" width="" height="" alt="Логотип сайта cat energy">
       </a>
       <nav class="navigation">
         <button class="navigation__toggle toggle-button" type="button">
@@ -200,7 +200,7 @@
             </div>
             <a class="card__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item card--more">
+          <li class="catalog__item card card--more">
             <div class="card__content">
               <h3 class="card__title">Показать еще 100500 товаров</h3>
               <p class="card__text">На самом деле вкусов гораздо больше!</p>
@@ -221,7 +221,7 @@
               <span class="product__size">1 упаковка (100&nbsp;г)</span>
               <span class="product__price">200&nbsp;₽</span>
             </p>
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="additionals__item product">
             <h3 class="product__title">Питьевая вода</h3>
@@ -229,7 +229,7 @@
               <span class="product__size">5 литров</span>
               <span class="product__price">50&nbsp;₽</span>
             </p>
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="additionals__item product">
             <h3 class="product__title">Молоко</h3>
@@ -237,7 +237,7 @@
               <span class="product__size">1 литр</span>
               <span class="product__price">100&nbsp;₽</span>
             </p>
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="additionals__item product">
             <h3 class="product__title">Витамины</h3>
@@ -245,23 +245,21 @@
               <span class="product__size">1 упаковка (30&nbsp;г)</span>
               <span class="product__price">300&nbsp₽</span>
             </p>
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="product__button button" href="#">Заказать</a>
           </li>
         </ul>
-        <p class="additionals-promo additionals-promo__text">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="additionals-promo__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
 
     <section class="subscription">
-      <div class="wrapper">
-        <h2 class="subscription__title">Текст заголовка</h2>
-        <p class="subscription__subtitle">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-        <form class="subscription__form form" action="https://echo.htmlacademy.ru/" method="post">
+      <h2 class="subscription__title">Текст заголовка</h2>
+      <p class="subscription__subtitle">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <form class="subscription__form form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="email">
         <input class="subscription__input" type="text" placeholder="кuklachev@gmail.com" name="email-id" id="email" required>
         <button class="subscription__button button" type="submit">Подписаться</button>
-        </form>
-      </div>
+      </form>
     </section>
 
     <section class="invitation">
@@ -304,7 +302,7 @@
             </a>
           </li>
         </ul>
-        <a class="developer developer__link" href="https://htmlacademy.ru/">
+        <a class="developer__link" href="https://htmlacademy.ru/">
           <span class="developer__name">HTML Academy</span>
           <img class="developer__logo" src="#" width="" height="" alt="Логотип html academy">
         </a>
