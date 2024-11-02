@@ -1,0 +1,20 @@
+.hero {
+  background-color: rgba(104, 183, 56, 0.85);
+  color: $base-color-white;
+  font-family: $secondary-font;
+
+  @media (min-width: 768px) {
+    background-color: $base-color-white;
+    color: inherit;
+  }
+}
+
+.hero__title {
+  font-weight: $primary-font-weight;
+  font-size: 36px;
+}
+
+.hero__subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+}

@@ -1,0 +1,26 @@
+.programms__list {
+  list-style-type: none;
+}
+
+.programms__title {
+  color: $base-color-text-dark;
+  font-family: $secondary-font;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: inherit;
+}
+
+.programms__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  color: $base-color-text-dark;
+  text-transform: uppercase;
+}
+
+.programms__item--slim {
+  background-color: $base-color-light-grey;
+}
+
+.programms__item--gain {
+  background-color: $base-color-light-grey;
+}

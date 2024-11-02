@@ -1,0 +1,15 @@
+.location {
+  background-color: $base-color-white;
+}
+
+.location__title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  color: $base-color-medium;
+  text-transform: uppercase;
+  font-weight: $primary-font-weight;
+}
+
+.location__catalog {
+  background-color: $base-color-light-grey;
+}
