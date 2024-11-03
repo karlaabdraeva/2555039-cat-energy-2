@@ -1,0 +1,28 @@
+.example {
+  background-color: $base-color-light-grey;
+}
+
+.example__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  color: $base-color-text-dark;
+  font-weight: $primary-font-weight;
+}
+
+.example__description {
+  font-size: 12px;
+}
+
+.example__number {
+  color: $base-color-text-dark;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: $primary-font-weight;
+}
+
+.example__cost {
+  font-family: $secondary-font;
+  font-weight: $primary-font-weight;
+  color: $base-color-text-dark;
+  text-transform: uppercase;
+}

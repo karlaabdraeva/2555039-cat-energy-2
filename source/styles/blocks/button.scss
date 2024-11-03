@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  font-family: $secondary-font;
+  background-color: $accent-color;
+  color: $base-color-white;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button__primary {
+  font-size: 20px;
+}
+
+.button--secondary {
+  color: $base-color-text;
+  background-color: $base-color-light-grey;
+}
