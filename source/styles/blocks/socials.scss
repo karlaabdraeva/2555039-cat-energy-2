@@ -24,38 +24,26 @@
   }
 
   &--vk {
-    -webkit-mask: url("../../icons/stack.svg#vkontakte");
-          mask-image: url("../../icons/stack.svg#vkontakte");
-    -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-          mask-size: contain;
-    -webkit-mask-position: center;
-          mask-position: center;
+    mask-image: url("../../icons/stack.svg#vkontakte");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
     background-color: #666666;
-}
+  }
 
   &--youtube {
-    -webkit-mask: url("../../icons/stack.svg#youtube");
-      mask-image: url("../../icons/stack.svg#youtube");
-    -webkit-mask-repeat: no-repeat;
-      mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-      mask-size: contain;
-    -webkit-mask-position: center;
-      mask-position: center;
+    mask-image: url("../../icons/stack.svg#youtube");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
     background-color: #666666;
-}
+  }
 
   &--telegram {
-    -webkit-mask: url("../../icons/stack.svg#telegram");
-      mask-image: url("../../icons/stack.svg#telegram");
-    -webkit-mask-repeat: no-repeat;
-      mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-      mask-size: contain;
-    -webkit-mask-position: center;
-      mask-position: center;
+    mask-image: url("../../icons/stack.svg#telegram");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
     background-color: #666666;
-}
+  }
 }
