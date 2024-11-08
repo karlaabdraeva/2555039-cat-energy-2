@@ -3,4 +3,10 @@
   color: $base-color-white;
   font-size: 16px;
   text-align: center;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#gift");
+    background-repeat: no-repeat;
+    background-size: 78px 80px;
+  }
 }

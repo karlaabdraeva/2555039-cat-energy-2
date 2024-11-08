@@ -1,3 +1,10 @@
+.card-more {
+  background-image: url("../../icons/stack.svg#plus-sign");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
 .card-more__title {
   color: $base-color-medium;
   text-transform: uppercase;
