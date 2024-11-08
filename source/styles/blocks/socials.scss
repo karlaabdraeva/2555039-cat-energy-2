@@ -1,3 +1,61 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .socials__list {
   list-style-type: none;
+}
+
+.socials__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+
+
+  &:hover,
+  :focus {
+    background-color: $accent-color;
+  }
+
+  &:active {
+    background-color: $accent-color;
+    opacity: 0.3;
+  }
+
+  &--vk {
+    -webkit-mask: url("../../icons/stack.svg#vkontakte");
+          mask-image: url("../../icons/stack.svg#vkontakte");
+    -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+          mask-size: contain;
+    -webkit-mask-position: center;
+          mask-position: center;
+    background-color: #666666;
+}
+
+  &--youtube {
+    -webkit-mask: url("../../icons/stack.svg#youtube");
+      mask-image: url("../../icons/stack.svg#youtube");
+    -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+      mask-size: contain;
+    -webkit-mask-position: center;
+      mask-position: center;
+    background-color: #666666;
+}
+
+  &--telegram {
+    -webkit-mask: url("../../icons/stack.svg#telegram");
+      mask-image: url("../../icons/stack.svg#telegram");
+    -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+      mask-size: contain;
+    -webkit-mask-position: center;
+      mask-position: center;
+    background-color: #666666;
+}
 }

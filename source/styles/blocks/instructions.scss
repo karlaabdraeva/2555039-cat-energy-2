@@ -1,10 +1,63 @@
 .instructions__title {
   font-family: $secondary-font;
   font-size: 36px;
+  line-height: 40px;
   color: $base-color-text-dark;
   font-weight: $primary-font-weight;
 }
 
 .instructions__list {
   list-style-type: none;
+}
+
+.instructions__item {
+  position: relative;
+}
+
+.instructions__item--nutrition::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 50px;
+  background-image: url("../../icons/stack.svg#leaf-icon");
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+  background-color: $accent-color;
+  background-position: center;
+}
+
+.instructions__item--cooking::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 50px;
+  background-image: url("../../icons/stack.svg#powder-icon");
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+  background-color: $accent-color;
+  background-position: center;
+}
+
+.instructions__item--usage::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 50px;
+  background-color: $accent-color;
+  background-image: url("../../icons/stack.svg#cutlery");
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+  background-position: center;
+}
+
+.instructions__item--time::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 50px;
+  background-color: $accent-color;
+  background-image: url("../../icons/stack.svg#clock");
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+  background-position: center;
 }
