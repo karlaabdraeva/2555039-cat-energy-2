@@ -8,8 +8,7 @@
 
 .product__content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   gap: 125px;
   justify-content: space-between;
 }

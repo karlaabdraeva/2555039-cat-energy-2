@@ -1,8 +1,7 @@
 .additionals__wrapper {
   min-height: 904px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
 @media (min-width: $tablet-width) {

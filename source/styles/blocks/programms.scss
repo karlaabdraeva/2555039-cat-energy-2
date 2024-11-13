@@ -1,8 +1,7 @@
 .programms__wrapper {
   min-height: 592px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
 .programms__title {
