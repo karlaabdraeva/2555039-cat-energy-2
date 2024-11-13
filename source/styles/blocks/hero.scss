@@ -1,19 +1,79 @@
 .hero {
   color: $base-color-white;
   font-family: $secondary-font;
+  text-align: center;
+  width: 100%;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @media (min-width: 768px) {
-    background-color: $base-color-white;
-    color: inherit;
+  @media (min-width: $tablet-width) {
+    .hero {
+      background-color: $base-color-white;
+      background-image: none;
+      min-height: 875px;
+    }
+
+    .hero__title {
+      color: $base-color-text-dark;
+      line-height: 60px;
+      font-size: 60px;
+      text-align: left;
+    }
+
+    .hero__subtitle {
+      color: $base-color-text-dark;
+      line-height: 20px;
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .hero {
+      background-color: $base-color-white;
+      background-image: none;
+      min-height: 580px;
+    }
+  }
+}
+
+.hero__wrapper {
+  min-height: 302px;
+  background-image: linear-gradient($accent-transparent, $accent-transparent), url("../../images/cat-background@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 694px;
+    background-image: linear-gradient($accent-transparent, $accent-transparent), url("../../images/cat-background@1x.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
 .hero__title {
   font-weight: $primary-font-weight;
   font-size: 36px;
+  color: $base-color-white;
+  line-height: 36px;
 }
 
 .hero__subtitle {
   text-transform: uppercase;
   font-size: 14px;
+  line-height: 14px;
+  color: $base-color-white;
+}
+
+.hero__button {
+  padding: 10px 44px;
 }

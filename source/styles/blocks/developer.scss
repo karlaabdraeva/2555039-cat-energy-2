@@ -4,24 +4,35 @@
   display: block;
   width: 27px;
   height: 34px;
-}
 
-.developer__link--text {
-  color: $base-color-text;
-}
+  &--image::before {
+    display: block;
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#html-logo");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #666666;
+  }
 
-.developer__link--image {
-  mask-image: url("../../icons/stack.svg#html-logo");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: #666666;
+  &--text:active {
+    opacity: 0.3;
+  }
 
-  &:hover,
-  &:focus {
+  &--image:hover::before,
+  &--image:focus::before {
     background-color: $accent-color;
+  }
+
+  &--image:active::before {
+    background-color: $accent-color;
+    opacity: 0.3;
   }
 }
 
-.developer__link:active {
-  opacity: 0.3;
+.developer__name {
+  font-size: 16px;
+  line-height: 20px;
+  color: $base-color-text;
 }

@@ -1,10 +1,36 @@
+.additionals__wrapper {
+  min-height: 904px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .additionals__wrapper {
+    min-height: 938px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionals__wrapper {
+    min-height: 408px;
+  }
+
+  .additionals__container {
+    display: grid;
+    grid-template-columns: auto 245px;
+  }
+}
+
 .additionals__title {
   font-family: $secondary-font;
   color: $base-color-text-dark;
   font-size: 24px;
   font-weight: $primary-font-weight;
+  line-height: 24px;
 }
 
 .additionals__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

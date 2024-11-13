@@ -5,12 +5,13 @@
   color: $base-color-white;
   text-transform: uppercase;
   text-align: center;
-  cursor: pointer;
   font-size: 16px;
+  line-height: 20px;
 }
 
-.button__primary {
-  font-size: 20px;
+.button--primary {
+  color: $base-color-white;
+  background-color: $accent-color;
 }
 
 .button--secondary {

@@ -5,3 +5,10 @@
   text-transform: uppercase;
   color: $base-color-grey;
 }
+
+.product__content {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 125px;
+  justify-content: space-between;
+}

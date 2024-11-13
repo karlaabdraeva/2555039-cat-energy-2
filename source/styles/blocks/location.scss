@@ -2,12 +2,34 @@
   background-color: $base-color-white;
 }
 
+.location__wrapper {
+  display: flex;
+  min-height: 112px;
+}
+
+@media (min-width: $tablet-width) {
+  .location__wrapper {
+    min-height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__wrapper {
+    min-height: 199px;
+  }
+}
+
 .location__title {
   font-family: $secondary-font;
   font-size: 16px;
   color: $base-color-medium;
   text-transform: uppercase;
   font-weight: $primary-font-weight;
+}
+
+.location__address {
+  line-height: 20px;
+  font-style: normal;
 }
 
 .location__catalog {

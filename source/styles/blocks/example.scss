@@ -2,6 +2,22 @@
   background-color: $base-color-light-grey;
 }
 
+.example__wrapper {
+  min-height: 659px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    min-height: 1081px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    min-height: 598px;
+  }
+}
+
 .example__title {
   font-family: $secondary-font;
   font-size: 36px;
@@ -11,6 +27,9 @@
 
 .example__description {
   font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
 }
 
 .example__number {
@@ -18,6 +37,7 @@
   text-transform: uppercase;
   font-size: 24px;
   font-weight: $primary-font-weight;
+  text-align: center;
 }
 
 .example__cost {
@@ -25,4 +45,6 @@
   font-weight: $primary-font-weight;
   color: $base-color-text-dark;
   text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
 }

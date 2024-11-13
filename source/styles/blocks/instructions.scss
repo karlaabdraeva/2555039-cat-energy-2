@@ -1,3 +1,7 @@
+.instructions__wrapper {
+  min-height: 380px;
+}
+
 .instructions__title {
   font-family: $secondary-font;
   font-size: 36px;
@@ -8,17 +12,22 @@
 
 .instructions__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .instructions__item {
   position: relative;
+  min-height: 60px;
 }
 
 .instructions__item--nutrition::before {
   position: absolute;
   content: "";
   width: 60px;
-  height: 50px;
+  height: 60px;
   background-image: url("../../icons/stack.svg#leaf-icon");
   background-repeat: no-repeat;
   background-size: 30px 32px;
@@ -30,7 +39,7 @@
   position: absolute;
   content: "";
   width: 60px;
-  height: 50px;
+  height: 60px;
   background-image: url("../../icons/stack.svg#powder-icon");
   background-repeat: no-repeat;
   background-size: 30px 32px;
@@ -42,7 +51,7 @@
   position: absolute;
   content: "";
   width: 60px;
-  height: 50px;
+  height: 60px;
   background-color: $accent-color;
   background-image: url("../../icons/stack.svg#cutlery");
   background-repeat: no-repeat;
@@ -54,10 +63,42 @@
   position: absolute;
   content: "";
   width: 60px;
-  height: 50px;
+  height: 60px;
   background-color: $accent-color;
   background-image: url("../../icons/stack.svg#clock");
   background-repeat: no-repeat;
   background-size: 30px 32px;
   background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .instructions__wrapper {
+    min-height: 736px;
+  }
+
+  .instructions__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instructions__item {
+    max-width: 300px;
+    min-height: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instructions__wrapper {
+    min-height: 441px;
+  }
+
+  .instructions__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .instructions__item {
+    max-width: 250px;
+    min-height: 280px;
+  }
 }

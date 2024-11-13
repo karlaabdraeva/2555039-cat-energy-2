@@ -1,5 +1,7 @@
-.programms__list {
-  list-style-type: none;
+.programms__wrapper {
+  min-height: 592px;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .programms__title {
@@ -8,10 +10,48 @@
   font-size: 24px;
   text-transform: uppercase;
   font-weight: inherit;
+  line-height: 37px;
+}
+
+.programms__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .programms__wrapper {
+    min-height: 789px;
+  }
+
+  .programms__item {
+    min-height: 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programms__wrapper {
+    min-height: 527px;
+  }
+
+  .programms__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .programms__item {
+    width: 570px;
+    min-height: 374px;
+  }
+}
+
+.programms__description {
+  line-height: 18px;
 }
 
 .programms__item {
   background-color: $base-color-light-grey;
+  min-height: 266px;
 
   &--slim {
     background-image: url("../../icons/stack.svg#slim-cat");
@@ -32,6 +72,7 @@
   color: $base-color-text-dark;
   text-transform: uppercase;
   line-height: 16px;
+  text-align: center;
 
   &::before {
     display: block;
