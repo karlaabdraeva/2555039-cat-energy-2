@@ -1,12 +1,15 @@
 .promo {
   background: rgba(104, 183, 56, 0.85);
-  color: $base-color-white;
-  font-size: 16px;
-  text-align: center;
-
-  &::before {
-    background-image: url("../../icons/stack.svg#gift");
-    background-repeat: no-repeat;
-    background-size: 78px 80px;
+  background-image: url("../../icons/stack.svg#gift");
+  background-repeat: no-repeat;
+  background-size: 78px 80px;
+  min-width: 280px;
+  min-height: 290px;
   }
-}
+
+  .promo__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $base-color-white;
+  }

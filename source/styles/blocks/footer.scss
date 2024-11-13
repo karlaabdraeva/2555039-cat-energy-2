@@ -1,3 +1,22 @@
 .footer {
   background-color: $base-color-light-grey;
 }
+
+.footer__wrapper {
+  min-height: 240px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 147px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    min-height: 169px;
+  }
+}

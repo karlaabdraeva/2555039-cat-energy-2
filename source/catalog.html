@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
@@ -15,7 +15,7 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="wrapper">
+    <div class="header__wrapper wrapper">
       <a class="logo" href="catalog.html" aria-current="page">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
@@ -47,7 +47,7 @@
 
   <main class="main">
     <section class="catalog">
-      <div class="wrapper">
+      <div class="catalog__wrapper wrapper">
         <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="catalog__list">
           <li class="catalog__item card">
@@ -78,7 +78,7 @@
                 </li>
               </ul>
             </div>
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
             <picture>
@@ -108,7 +108,7 @@
                 </li>
               </ul>
             </div>
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
             <picture>
@@ -138,7 +138,7 @@
                 </li>
               </ul>
             </div>
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
             <picture>
@@ -168,7 +168,7 @@
                 </li>
               </ul>
             </div>
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
             <picture>
@@ -198,7 +198,7 @@
                 </li>
               </ul>
             </div>
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
             <picture>
@@ -228,7 +228,7 @@
                 </li>
               </ul>
             </div>
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item card">
             <picture>
@@ -258,7 +258,7 @@
                 </li>
               </ul>
             </div>
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item card card-more">
             <div class="card-more__content">
@@ -272,54 +272,60 @@
     </section>
 
     <section class="additionals">
-      <div class="wrapper">
+      <div class="additionals__wrapper wrapper">
         <h2 class="additionals__title">Дополнительные товары</h2>
-        <ul class="additionals__list">
-          <li class="additionals__item product">
-            <h3 class="product__title">Сахарозаменитель</h3>
-            <p class="product__content">
-              <span class="product__size">1 упаковка (100&nbsp;г)</span>
-              <span class="product__price">200&nbsp;₽</span>
-            </p>
-            <a class="product__button button" href="#">Заказать</a>
-          </li>
-          <li class="additionals__item product">
-            <h3 class="product__title">Питьевая вода</h3>
-            <p class="product__content">
-              <span class="product__size">5 литров</span>
-              <span class="product__price">50&nbsp;₽</span>
-            </p>
-            <a class="product__button button" href="#">Заказать</a>
-          </li>
-          <li class="additionals__item product">
-            <h3 class="product__title">Молоко</h3>
-            <p class="product__content">
-              <span class="product__size">1 литр</span>
-              <span class="product__price">100&nbsp;₽</span>
-            </p>
-            <a class="product__button button" href="#">Заказать</a>
-          </li>
-          <li class="additionals__item product">
-            <h3 class="product__title">Витамины</h3>
-            <p class="product__content">
-              <span class="product__size">1 упаковка (30&nbsp;г)</span>
-              <span class="product__price">300&nbsp;₽</span>
-            </p>
-            <a class="product__button button" href="#">Заказать</a>
-          </li>
-        </ul>
-        <p class="promo">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="additionals__container">
+          <ul class="additionals__list">
+            <li class="additionals__item product">
+              <h3 class="product__title">Сахарозаменитель</h3>
+              <p class="product__content">
+                <span class="product__size">1 упаковка (100&nbsp;г)</span>
+                <span class="product__price">200&nbsp;₽</span>
+              </p>
+              <a class="product__button button button--primary" href="#">Заказать</a>
+            </li>
+            <li class="additionals__item product">
+              <h3 class="product__title">Питьевая вода</h3>
+              <p class="product__content">
+                <span class="product__size">5 литров</span>
+                <span class="product__price">50&nbsp;₽</span>
+              </p>
+              <a class="product__button button button--primary" href="#">Заказать</a>
+            </li>
+            <li class="additionals__item product">
+              <h3 class="product__title">Молоко</h3>
+              <p class="product__content">
+                <span class="product__size">1 литр</span>
+                <span class="product__price">100&nbsp;₽</span>
+              </p>
+              <a class="product__button button button--primary" href="#">Заказать</a>
+            </li>
+            <li class="additionals__item product">
+              <h3 class="product__title">Витамины</h3>
+              <p class="product__content">
+                <span class="product__size">1 упаковка (30&nbsp;г)</span>
+                <span class="product__price">300&nbsp;₽</span>
+              </p>
+              <a class="product__button button button--primary" href="#">Заказать</a>
+            </li>
+          </ul>
+          <div class="promo">
+            <p class="promo__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="subscription">
-      <h2 class="subscription__title">Акции и новинки</h2>
-      <p class="subscription__subtitle">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <form class="subscription__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="email">Введите ваш e-mail</label>
-        <input class="form__input" type="text" placeholder="кuklachev@gmail.com" name="email-id" id="email" required>
-        <button class="form__button button" type="submit">Подписаться</button>
-      </form>
+      <div class="subscription__wrapper wrapper">
+        <h2 class="subscription__title">Акции и новинки</h2>
+        <p class="subscription__subtitle">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+        <form class="subscription__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="email">Введите ваш e-mail</label>
+          <input class="form__input" type="text" placeholder="кuklachev@gmail.com" name="email-id" id="email" required>
+          <button class="form__button button button--primary" type="submit">Подписаться</button>
+        </form>
+      </div>
     </section>
 
     <section class="location">
@@ -346,11 +352,11 @@
   </main>
 
   <footer class="footer">
-    <div class="wrapper">
+    <div class="footer__wrapper wrapper">
       <a class="footer__logo logo" href="#">
         <img class="footer__logo-image" src="images/logo-text.svg" width="128" height="124" alt="Логотип сайта cat energy">
       </a>
-      <section class="socials">
+      <section class="footer__socials socials">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="socials__list">
           <li class="socials__item">
@@ -358,12 +364,12 @@
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="socials-item">
+          <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="#">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
-          <li class="socials-item">
+          <li class="socials__item">
             <a class="socials__link socials__link--telegram" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>

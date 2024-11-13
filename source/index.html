@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
@@ -15,7 +15,7 @@
 
 <body class="page__body">
   <header class="header header--main">
-    <div class="wrapper">
+    <div class="header__wrapper wrapper">
       <a class="logo" href="index.html" aria-current="page">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
@@ -47,24 +47,24 @@
 
   <main class="main">
     <section class="hero">
-      <div class="wrapper">
+      <div class="hero__wrapper wrapper">
         <h1 class="hero__title">Функциональное
           питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.webp, images/index-can-desktop@2x.webp 2x" width="552" height="499" type="image/webp">
-          <source media="(min-width: 768px)" srcset="images/index-can-tablet@1x.webp, images/index-can-tablet@2x.webp 2x" width="709" height="609" type="image/webp">
-          <source media="(min-width: 320px)" srcset="images/index-can-mobile@1x.webp, images/index-can-mobile@2x.webp 2x" width="280" height="270" type="image/webp">
-          <source media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png, images/index-can-desktop@2x.png 2x" width="552" height="499" type="image/png">
-          <source media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png, images/index-can-tablet@2x.png 2x" width="709" height="609" type="image/png">
-          <img class="hero__picture" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Продукт cat energy">
-        </picture>
-        <a class="programm-selection" href="#">Подобрать программу</a>
       </div>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.webp, images/index-can-desktop@2x.webp 2x" width="552" height="499" type="image/webp">
+        <source media="(min-width: 768px)" srcset="images/index-can-tablet@1x.webp, images/index-can-tablet@2x.webp 2x" width="709" height="609" type="image/webp">
+        <source media="(min-width: 320px)" srcset="images/index-can-mobile@1x.webp, images/index-can-mobile@2x.webp 2x" width="280" height="270" type="image/webp">
+        <source media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png, images/index-can-desktop@2x.png 2x" width="552" height="499" type="image/png">
+        <source media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png, images/index-can-tablet@2x.png 2x" width="709" height="609" type="image/png">
+        <img class="hero__picture" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Продукт cat energy">
+      </picture>
+      <a class="hero__button button button--primary" href="#">Подобрать программу</a>
     </section>
 
     <section class="programms">
-      <div class="wrapper">
+      <div class="programms__wrapper wrapper">
         <h2 class="visually-hidden">Выбор программы</h2>
         <ul class="programms__list">
           <li class="programms__item programms__item--slim">
@@ -82,33 +82,25 @@
     </section>
 
     <section class="instructions">
-      <div class="wrapper">
+      <div class="instructions__wrapper wrapper">
         <h2 class="instructions__title">Как это работает</h2>
         <ul class="instructions__list">
-          <li class="instructions__item instructions__item--nutrition">
-            <p class="instructions__text">Функциональное питание
-              содержит только полезные
-              питательные вещества.</p>
-          </li>
-          <li class="instructions__item instructions__item--cooking">
-            <p class="instructions__text">Выпускается в виде порошка,
-              который нужно лишь залить
-              кипятком и готово.</p>
-          </li>
-          <li class="instructions__item instructions__item--usage">
-            <p class="instructions__text">Замените один-два приема
-              обычной еды на наше
-              функциональное питание.</p>
-          </li>
-          <li class="instructions__item instructions__item--time">
-            <p class="instructions__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-          </li>
+          <li class="instructions__item instructions__item--nutrition">Функциональное питание
+            содержит только полезные
+            питательные вещества.</li>
+          <li class="instructions__item instructions__item--cooking">Выпускается в виде порошка,
+            который нужно лишь залить
+            кипятком и готово.</li>
+          <li class="instructions__item instructions__item--usage">Замените один-два приема
+            обычной еды на наше
+            функциональное питание.</li>
+          <li class="instructions__item instructions__item--time">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
         </ul>
       </div>
     </section>
 
     <section class="example">
-      <div class="wrapper">
+      <div class="example__wrapper wrapper">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <dl class="example__list">
@@ -140,7 +132,7 @@
     </section>
 
     <section class="location">
-      <div class="wrapper">
+      <div class="location__wrapper wrapper">
         <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="location__address">
           <p class="location__street">ул. Большая
@@ -163,11 +155,11 @@
   </main>
 
   <footer class="footer">
-    <div class="wrapper">
+    <div class="footer__wrapper wrapper">
       <a class="footer__logo logo" href="#">
         <img class="footer__logo-image" src="images/logo-text.svg" width="128" height="124" alt="Логотип сайта cat energy">
       </a>
-      <section class="socials">
+      <section class="footer__socials socials">
         <h2 class=" visually-hidden">Соцсети</h2>
         <ul class="socials__list">
           <li class="socials__item">
@@ -175,12 +167,12 @@
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="socials-item">
+          <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="#">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
-          <li class="socials-item">
+          <li class="socials__item">
             <a class="socials__link socials__link--telegram" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>

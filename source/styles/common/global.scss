@@ -5,6 +5,11 @@ body {
   line-height: 18px;
   color: $base-color-text;
   background-color: $base-color-white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 a {

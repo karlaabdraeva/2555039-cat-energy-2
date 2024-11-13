@@ -4,10 +4,21 @@
   font-weight: $primary-font-weight;
 }
 
+.subscription__wrapper {
+  min-height: 336px;
+}
+
 .subscription__title {
   font-size: 24px;
+  font-family: $secondary-font;
+  line-height: 24px;
+  font-weight: $primary-font-weight;
 }
 
 .subscription__subtitle {
   font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $base-color-text-dark;
+  font-family: $secondary-font;
 }

@@ -1,3 +1,7 @@
+.catalog__wrapper {
+  min-height: 1775px;
+}
+
 .catalog__title {
   font-family: $secondary-font;
   font-size: 36px;
@@ -7,4 +11,29 @@
 
 .catalog__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    min-height: 2368px;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    min-height: 1229px;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
