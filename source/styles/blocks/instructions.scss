@@ -1,104 +1,149 @@
 .instructions__wrapper {
-  min-height: 380px;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .instructions__title {
   font-family: $secondary-font;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1;
   color: $base-color-text-dark;
   font-weight: $primary-font-weight;
+  margin: 0 0 40px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin-bottom: 72px;
+  }
 }
 
 .instructions__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 156px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 80px;
+  }
 }
 
 .instructions__item {
   position: relative;
-  min-height: 60px;
-}
+  display: grid;
+  grid-template-columns: 140 minmax(0, 1fr);
+  grid-template-rows: 70px minmax(0, 1fr);
+  margin-left: 0;
+  align-items: center;
+  counter-increment: counter 1;
 
-.instructions__item--nutrition::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 60px;
-  background-image: url("../../icons/stack.svg#leaf-icon");
-  background-repeat: no-repeat;
-  background-size: 30px 32px;
-  background-color: $accent-color;
-  background-position: center;
-}
-
-.instructions__item--cooking::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 60px;
-  background-image: url("../../icons/stack.svg#powder-icon");
-  background-repeat: no-repeat;
-  background-size: 30px 32px;
-  background-color: $accent-color;
-  background-position: center;
-}
-
-.instructions__item--usage::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 60px;
-  background-color: $accent-color;
-  background-image: url("../../icons/stack.svg#cutlery");
-  background-repeat: no-repeat;
-  background-size: 30px 32px;
-  background-position: center;
-}
-
-.instructions__item--time::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 60px;
-  background-color: $accent-color;
-  background-image: url("../../icons/stack.svg#clock");
-  background-repeat: no-repeat;
-  background-size: 30px 32px;
-  background-position: center;
-}
-
-@media (min-width: $tablet-width) {
-  .instructions__wrapper {
-    min-height: 736px;
+  &::after {
+    display: inline-block;
+    content: "";
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: $accent-color;
+    width: 60px;
+    height: 60px;
+    grid-area: 1 / 1 / 4 / 1;
   }
 
-  .instructions__list {
+  &--nutrition::after {
+    background-image: url("../../icons/stack.svg#leaf-icon");
+    background-size: 25px 28px;
+  }
+
+  &--cooking::after {
+    background-image: url("../../icons/stack.svg#powder-icon");
+    background-size: 26px 29px;
+  }
+
+  &--usage::after {
+    background-image: url("../../icons/stack.svg#cutlery");
+    background-size: 25px 30px;
+  }
+
+  &--time::after {
+    background-image: url("../../icons/stack.svg#clock");
+    background-size: 26px 31px;
+  }
+
+  @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .instructions__item {
-    max-width: 300px;
+    grid-template-columns: 114px minmax(0, 1fr);
+    grid-template-rows: 140px minmax(0, 1fr);
+    width: 245px;
     min-height: 280px;
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .instructions__wrapper {
-    min-height: 441px;
+    &::before {
+      content: counter(counter);
+      font-family: $secondary-font;
+      font-size: 280px;
+      font-weight: 400;
+      color: $base-color-light-grey;
+      grid-column: 2 / 2;
+      grid-row: 1 / 2;
+      line-height: 0.9;
+      margin-top: 120px;
+    }
+
+    &::after {
+      grid-area: 1 / 1 / 1 / 1;
+      width: 80px;
+      height: 80px;
+    }
   }
 
-  .instructions__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .instructions__item {
+  @media (min-width: $desktop-width) {
     max-width: 250px;
     min-height: 280px;
+  }
+}
+
+.instructions__text {
+  margin: 0;
+  min-width: 200px;
+  grid-area: 1 / 1 / 4 / 2;
+  margin-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin: 0;
+    grid-area: 2 / 1 / 2 / 4;
+    line-height: 1.5;
+    margin-bottom: 70px;
+
+    &::after {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }

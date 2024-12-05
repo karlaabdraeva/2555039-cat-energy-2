@@ -1,14 +1,25 @@
 $primary-font: "Lato", "Arial", sans-serif;
 $secondary-font: "Oswald", "Arial", sans-serif;
 $primary-font-weight: 400;
+
 $base-color-text: #444444;
 $accent-color:  #68b738;
 $accent-transparent: rgba(104, 183, 56, 0.85);
+$accent-dark: #5eaa2f;
 $base-color-white: #ffffff;
 $base-color-medium: #111111;
 $base-color-grey: #222222;
 $base-color-text-dark: #000000;
 $base-color-light-grey: #f2f2f2;
 $base-color-dark-grey: #eaeaea;
+$brand-color: #666666;
+$background-color-grey: linear-gradient(to right top, #525357, #3c3c3f);
+$background-color-light-grey: linear-gradient(to right, #9a9a9a 80%, #f3f3f3);
+$decor-color: #d9d9d9;
+$decor-color-light: #ebebeb;
+$decor-color-dark: #cdcdcd;
+$decor-color-medium: #e7e7e7;
+$error-color: #ff8282;
+
 $tablet-width: 768px;
 $desktop-width: 1440px;

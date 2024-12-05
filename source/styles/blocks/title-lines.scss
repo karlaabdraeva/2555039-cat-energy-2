@@ -1,0 +1,41 @@
+.title-lines {
+  background: $base-color-white;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 1;
+  color: $base-color-text-dark;
+  font-weight: $primary-font-weight;
+  box-shadow: -40px 0 0 0 $base-color-white, 40px 0 0 0 $base-color-white;
+  position: relative;
+  width: fit-content;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    top: 10px;
+    right: 0;
+    z-index: -1;
+    background: $accent-color;
+    box-shadow: 100vw 0 0 0 $accent-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 1;
+    box-shadow: -40px 0 0 0 $base-color-white, 40px 0 0 0 $base-color-white;
+
+    &::before {
+      top: 14px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+
+    &::before {
+      top: 18px;
+    }
+  }
+}
