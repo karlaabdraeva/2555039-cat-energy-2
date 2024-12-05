@@ -1,0 +1,27 @@
+.nojs {
+  .button-toggle {
+    opacity: 0;
+  }
+
+  .navigation__list {
+    position: relative;
+    display: block;
+    min-width: 100vw;
+    top: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nojs {
+    .header--main .navigation__list {
+      position: relative;
+    }
+
+    .navigation__list {
+      position: unset;
+      display: flex;
+      min-width: unset;
+      top: 0;
+    }
+  }
+}

@@ -2,7 +2,7 @@ body {
   font-family: $primary-font;
   font-weight: $primary-font-weight;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.5;
   color: $base-color-text;
   background-color: $base-color-white;
   display: flex;
@@ -14,4 +14,17 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
