@@ -35,11 +35,13 @@
   text-align: center;
   color: $base-color-text-dark;
   font-family: $secondary-font;
+  margin: 23px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0 38px;
     font-size: 24px;
     line-height: 1.3;
+    margin: 0 0 28px;
   }
 
   @media (min-width: $desktop-width) {
