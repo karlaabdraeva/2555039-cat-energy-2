@@ -1,0 +1,52 @@
+.developer {
+  margin: 0;
+  padding: 0;
+}
+
+.developer__link {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 280px;
+  margin: 20px auto 40px;
+  text-decoration: none;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#html-logo");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $brand-color;
+  }
+
+  &:active .developer__text {
+    opacity: 0.3;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $accent-color;
+  }
+
+  &:active::after {
+    background-color: $accent-color;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 23px;
+    max-width: 200px;
+    margin: 0;
+  }
+}
+
+.developer__name {
+  font-size: 16px;
+  line-height: 1.2;
+  color: $base-color-text;
+}

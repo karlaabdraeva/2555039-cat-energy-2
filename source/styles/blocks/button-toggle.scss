@@ -1,0 +1,34 @@
+.button-toggle {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  mask-position: right 50%;
+  background-color: $base-color-text-dark;
+  mask-repeat: no-repeat;
+  border: transparent;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.button-toggle--closed {
+  mask-image: url("../../icons/stack.svg#burger");
+  mask-size: 24px 24px;
+}
+
+.button-toggle--opened {
+  mask-image: url("../../icons/stack.svg#close-x-button");
+  mask-size: 20px 20px;
+}

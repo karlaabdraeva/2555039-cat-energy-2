@@ -1,0 +1,71 @@
+.promo {
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: linear-gradient($accent-transparent, $accent-transparent), image-set("../images/promo-background-mobile@1x.jpg" 1x type("image/jpg"), "../images/promo-background-mobile@2x.jpg" 2x type("image/jpg")), $background-color-light-grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 20px 43px;
+  color: $base-color-white;
+  text-align: center;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#gift");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 78px 80px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient($accent-transparent, $accent-transparent), image-set("../images/promo-background-tablet@1x.jpg" 1x type("image/jpg"), "../images/promo-background-tablet@2x.jpg" 2x type("image/jpg")), $background-color-light-grey;
+    display: grid;
+    grid-template-columns: 1fr 266px;
+    padding: 57px 20px 60px 78px;
+    text-align: start;
+
+    &::before {
+      width: 80px;
+      height: 82px;
+      margin: 0;
+      background-size: 80px 82px;
+      grid-row: 1 / -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 23px 20px;
+    background-image: linear-gradient($accent-transparent, $accent-transparent), image-set("../images/promo-background-mobile@1x.jpg" 1x type("image/jpg"), "../images/promo-background-mobile@2x.jpg" 2x type("image/jpg")), $background-color-light-grey;
+    text-align: center;
+
+    &::before {
+      width: 80px;
+      height: 83px;
+      margin-bottom: 46px;
+      background-size: 80px 83px;
+    }
+  }
+}
+
+.promo__text {
+  font-size: 16px;
+  line-height: 1.2;
+  color: $base-color-white;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / -1;
+    margin: 10px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
