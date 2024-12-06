@@ -1,10 +1,10 @@
 .catalog {
   @media (min-width: $tablet-width) {
-    padding: 40px 0 74px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 45px 0 71px;
+    padding: 0;
   }
 }
 
@@ -29,13 +29,14 @@
   font-weight: $primary-font-weight;
   color: $base-color-text-dark;
   width: 280px;
-  margin: 27px auto 40px;
+  margin: 16px auto 30px;
 
   @media (min-width: $tablet-width) {
     width: unset;
-    margin: 0 0 84px;
+    padding: 40px 0;
     font-size: 60px;
     line-height: 1;
+    margin: 0;
   }
 }
 
@@ -49,9 +50,15 @@
     flex-wrap: wrap;
     gap: 60px;
     margin: 0;
+    padding: 40px 0 71px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 63px 80px;
+    gap: 55px 80px;
+    padding: 40 0 64px;
   }
+}
+
+.catalog__item {
+  padding: 0;
 }

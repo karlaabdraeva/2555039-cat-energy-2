@@ -9,6 +9,11 @@
   @media (min-width: $tablet-width) {
     margin-inline: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-inline: auto;
+    margin-top: 59px;
+  }
 }
 
 .demonstration__image {

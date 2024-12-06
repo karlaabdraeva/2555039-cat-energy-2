@@ -11,6 +11,8 @@
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body nojs">
@@ -25,7 +27,7 @@
           </picture>
         </a>
         <a class="header__logo-text logo " href="index.html" aria-current="page">
-          <img class="logo__image" src="images/logo-text.svg" width="101" height="18" alt="Логотип cat energy надписью">
+          <img class="logo__image logo__image--text" src="images/logo-text.svg" width="101" height="18" alt="Логотип cat energy надписью">
         </a>
         <button class="header__toggle button-toggle button-toggle--closed" type="button" id="button">
           <span class="visually-hidden">Меню</span>
@@ -50,8 +52,7 @@
   <main class="main">
     <section class="hero">
       <div class="hero__wrapper wrapper">
-        <h1 class="hero__title">Функциональное
-          питание для котов</h1>
+        <h1 class="hero__title">Функциональное<br>питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
         <div class="hero__image">
           <picture>
@@ -67,19 +68,19 @@
       </div>
     </section>
 
-    <section class="programms">
-      <div class="programms__wrapper wrapper">
+    <section class="programs">
+      <div class="programs__wrapper wrapper">
         <h2 class="visually-hidden">Выбор программы</h2>
-        <ul class="programms__list">
-          <li class="programms__item programms__item--slim">
-            <h3 class="programms__title">Похудение</h3>
-            <p class="programms__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programms__link" href="#">Каталог Slim</a>
+        <ul class="programs__list">
+          <li class="programs__item programs__item--slim">
+            <h3 class="programs__title">Похудение</h3>
+            <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="programs__link" href="#">Каталог Slim</a>
           </li>
-          <li class="programms__item programms__item--pro">
-            <h3 class="programms__title">Набор массы</h3>
-            <p class="programms__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programms__link" href="#">Каталог Pro</a>
+          <li class="programs__item programs__item--pro">
+            <h3 class="programs__title">Набор массы</h3>
+            <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="programs__link" href="#">Каталог Pro</a>
           </li>
         </ul>
       </div>
@@ -115,20 +116,20 @@
       <div class="example__wrapper wrapper">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__subtitle">Борис сбросил 5&nbsp;кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__stats-container">
-          <dl class="example__list example__list--weight">
-            <dt class="example__number example__number--weight">5&nbsp;КГ</dt>
-            <dd class="example__description example__description--weight">снижение веса</dd>
-          </dl>
-          <dl class="example__list example__list--time">
-            <dt class="example__number example__number--time">60 ДНЕЙ</dt>
-            <dd class="example__description example__description--time">затрачено времени</dd>
-          </dl>
-          <dl class="example__list example__list--cost">
+        <dl class="example__list">
+          <div class="example__item example__item--weight">
+            <dt class="example__description example__description--weight">Снижение веса</dt>
+            <dd class="example__number example__number--weight">5&nbsp;кг</dd>
+          </div>
+          <div class="example__item example__item--time">
+            <dt class="example__description example__description--time">Затрачено времени</dt>
+            <dd class="example__number example__number--time">60 дней</dd>
+          </div>
+          <div class="example__item example__item--cost">
             <dt class="example__expenses">Затраты на питание:</dt>
-            <dd class="example__total">15 000&nbsp;РУБ.</dd>
-          </dl>
-        </div>
+            <dd class="example__total">15 000&nbsp;руб.</dd>
+          </div>
+        </dl>
         <div class="example__demonstration demonstration">
           <picture>
             <source media="(min-width: 768px)" srcset="images/before-tablet@1x.webp, images/before-tablet@2x.webp 2x" width="560" height="512" type="image/webp">
@@ -153,14 +154,13 @@
 
     <section class="location" data-test="contacts">
       <div class="location__wrapper wrapper">
-        <h2 class="location__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="location__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
         <address class="location__address">
-          <p class="location__street">ул.&nbsp;Большая
-            Конюшенная, д.&nbsp;19/8</p>
+          <p class="location__street">ул.&nbsp;Большая<br>Конюшенная, д.&nbsp;19/8</p>
           <p class="location__city">Санкт-Петербург</p>
         </address>
       </div>
-      <div class="location-map">
+      <div class="location__map">
         <h2 class="visually-hidden">Карта</h2>
         <div class="location__image-container">
           <picture>

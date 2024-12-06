@@ -2,6 +2,7 @@
   border-top: 1px solid $decor-color-light;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     display: flex;
     border-top: none;
   }
@@ -20,7 +21,7 @@
   grid-template-columns: repeat(2, 50%);
   width: 280px;
   margin: 0 auto;
-  padding: 20px 0 25px;
+  padding: 21px 0 25px;
   row-gap: 14px;
 
   @media (min-width: $tablet-width) {
@@ -29,7 +30,7 @@
     display: grid;
     grid-template-columns: 37px 250px 37px;
     grid-template-rows: 69px 150px 1fr max-content min-content 28px;
-    row-gap: 12px;
+    row-gap: 13px;
 
     &::before {
       content: "";
@@ -45,7 +46,7 @@
     width: 245px;
     grid-template-columns: 38px 169px 38px;
     grid-template-rows: 63px 129px 1fr max-content min-content 23px;
-    row-gap: 17px;
+    row-gap: 20px;
   }
 }
 
